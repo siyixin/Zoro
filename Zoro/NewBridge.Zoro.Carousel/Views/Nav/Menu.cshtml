@@ -1,0 +1,11 @@
+﻿@model IEnumerable<string>
+
+@Html.ActionLink("主页","Index","Home")
+
+@foreach (var link in Model) {
+    @Html.RouteLink(link,new { controller="Home",action="Movies",category=link},new { @class=link==ViewBag.SelectedCategory?"selected":null})
+}
+
+<span class="right_ab">
+    <a href="http://www.customs.gov.cn"><strong>天津海关技术处</strong></a>
+</span>

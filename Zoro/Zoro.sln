@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBridge.Zoro.Carousel", "NewBridge.Zoro.Carousel\NewBridge.Zoro.Carousel.csproj", "{5BD23080-38DB-484F-B39E-BEEB105AB275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBridge.Zoro.Douban", "NewBridge.Zoro.Douban\NewBridge.Zoro.Douban.csproj", "{207F0B46-5B41-4254-8BC0-7C28B69F4CBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBridge.Zoro.Exchange.Outer", "NewBridge.Zoro.Exchange\NewBridge.Zoro.Exchange.Outer.csproj", "{3C8E800A-0102-40DF-A4FE-F7D175E47C98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBridge.Zoro.Library", "NewBridge.Zoro.Library\NewBridge.Zoro.Library.csproj", "{EBB2247F-D96A-4056-BC29-9DC620F26F46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBridge.Zoro.MySQLClient", "NewBridge.Zoro.MySQLClient\NewBridge.Zoro.MySQLClient.csproj", "{B0E0BBFD-0F54-4EAF-917D-B129AB37469D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewBridge.Zoro.Test", "NewBridge.Zoro.Test\NewBridge.Zoro.Test.csproj", "{37940DC1-AC46-4575-BB43-68D43D39D7D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BD23080-38DB-484F-B39E-BEEB105AB275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD23080-38DB-484F-B39E-BEEB105AB275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD23080-38DB-484F-B39E-BEEB105AB275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD23080-38DB-484F-B39E-BEEB105AB275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207F0B46-5B41-4254-8BC0-7C28B69F4CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207F0B46-5B41-4254-8BC0-7C28B69F4CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207F0B46-5B41-4254-8BC0-7C28B69F4CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207F0B46-5B41-4254-8BC0-7C28B69F4CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C8E800A-0102-40DF-A4FE-F7D175E47C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8E800A-0102-40DF-A4FE-F7D175E47C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8E800A-0102-40DF-A4FE-F7D175E47C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8E800A-0102-40DF-A4FE-F7D175E47C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB2247F-D96A-4056-BC29-9DC620F26F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB2247F-D96A-4056-BC29-9DC620F26F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB2247F-D96A-4056-BC29-9DC620F26F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB2247F-D96A-4056-BC29-9DC620F26F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E0BBFD-0F54-4EAF-917D-B129AB37469D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E0BBFD-0F54-4EAF-917D-B129AB37469D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E0BBFD-0F54-4EAF-917D-B129AB37469D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E0BBFD-0F54-4EAF-917D-B129AB37469D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37940DC1-AC46-4575-BB43-68D43D39D7D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37940DC1-AC46-4575-BB43-68D43D39D7D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37940DC1-AC46-4575-BB43-68D43D39D7D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37940DC1-AC46-4575-BB43-68D43D39D7D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
