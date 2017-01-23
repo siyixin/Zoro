@@ -272,7 +272,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Movie.cshtml" />
     <Content Include="Views\Home\Movies.cshtml" />
     <Content Include="Views\Nav\Menu.cshtml" />
   </ItemGroup>

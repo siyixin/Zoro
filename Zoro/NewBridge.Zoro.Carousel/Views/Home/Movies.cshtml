@@ -56,8 +56,8 @@
                                     <p>剧情：@Html.DisplayFor(modelItem => item.Summary)</p>
                                 </div>
                                 <ul>
-                                    <li><a href="#">阅读更多</a></li>
-                                    <li><a href="#">与人分享</a></li>
+                                    <li><a href=@string.Format("https://movie.douban.com/subject/{0}/",item.Id)>阅读更多</a></li>
+                                    @*<li><a href="#">与人分享</a></li>*@
                                 </ul>
                             </div>
                         </div>

@@ -38,6 +38,7 @@ namespace NewBridge.Zoro.Carousel.Controllers
             {
                 Movie m = new Models.Movie()
                 {
+                    Id = (int)dr["id"],
                     Title = (string)dr["title"],
                     Rating = (decimal)dr["rating"],
                     Category = (string)dr["category"],

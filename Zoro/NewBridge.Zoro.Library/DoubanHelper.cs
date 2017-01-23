@@ -108,17 +108,17 @@ namespace NewBridge.Zoro.Library
             Console.WriteLine("海报:{0}", subject.images.large);
         }
 
-        public static DataTable GetMovies()
-        {
-            string sql = "SELECT title,original_title,rating,image,category,year,genre,directors,casts FROM movie";
-            return DBHelper.GetDataSet(sql);
-        }
+        //public static DataTable GetMovies()
+        //{
+        //    string sql = "SELECT id,title,original_title,rating,image,category,year,genre,directors,casts FROM movie";
+        //    return DBHelper.GetDataSet(sql);
+        //}
 
         public static DataTable GetMovie(string category)
         {
-            string sql = "SELECT title,original_title,rating,image,category,year,genre,directors,casts,summary FROM movie WHERE category = '"+category+"'";
+            string sql = "SELECT id,title,original_title,rating,image,category,year,genre,directors,casts,summary FROM movie WHERE category = '"+category+"'";
             if(category == "top10")
-            sql = "SELECT title,original_title,rating,image,category,year,genre,directors,casts,summary FROM movie ORDER BY rating DESC limit 1,10";
+            sql = "SELECT id,title,original_title,rating,image,category,year,genre,directors,casts,summary FROM movie ORDER BY rating DESC limit 1,10";
             return DBHelper.GetDataSet(sql);
         }
 

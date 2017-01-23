@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<string>
 
-@Html.ActionLink("主页","Index","Home")
+@Html.ActionLink("主页","Movies","Home")
 
 @foreach (var link in Model) {
     @Html.RouteLink(link,new { controller="Home",action="Movies",category=link},new { @class=link==ViewBag.SelectedCategory?"selected":null})
