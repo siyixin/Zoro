@@ -1,11 +1,13 @@
 ﻿@model IEnumerable<string>
 
-@Html.ActionLink("主页","Movies","Home")
+@*@Html.ActionLink("主页","Movies","Home")*@
 
-@foreach (var link in Model) {
-    @Html.RouteLink(link,new { controller="Home",action="Movies",category=link},new { @class=link==ViewBag.SelectedCategory?"selected":null})
+@foreach (var link in Model)
+{
+    var active = link == ViewBag.SelectedCategory ? "active":"";
+    <li class=@active>@Html.RouteLink(link, new { controller = "Home", action = "Movies", category = link })</li>
 }
 
-<span class="right_ab">
+@*<span class="right_ab">
     <a href="http://www.customs.gov.cn"><strong>天津海关技术处</strong></a>
-</span>
+</span>*@

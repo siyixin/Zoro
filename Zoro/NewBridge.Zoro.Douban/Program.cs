@@ -60,6 +60,7 @@ namespace NewBridge.Zoro.Douban
 
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
+            Console.WriteLine("{0}:{1}:{2}", i, tasks[i].Name, e.SignalTime.ToLongTimeString());
             //第一次调用豆瓣API
             Subject subject = DoubanHelper.GetChosen(tasks[i].Name);
             if (subject.id != null)
@@ -95,8 +96,6 @@ namespace NewBridge.Zoro.Douban
                 Console.WriteLine("{0}豆瓣返回空值", tasks[i].Name);
                 Console.ResetColor();
             }
-            
-            Console.WriteLine("{0}:{1}:{2}",i,tasks[i].Name,e.SignalTime.ToLongTimeString());
             i++;
         }
     }

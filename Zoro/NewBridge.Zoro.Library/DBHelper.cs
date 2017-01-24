@@ -104,7 +104,7 @@ namespace NewBridge.Zoro.Library
         public static int InsertMovie(Task t, Subject s,string summary)
         {
             string sql = string.Format("INSERT INTO movie VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')",
-                s.id, s.title.Replace("'","''"), s.original_title.Replace("'", "''"), s.rating.average, s.year==""?"0":s.year, s.subtype, parse(s.genres).Replace("'", "''"), parse(s.casts).Replace("'", "''"), parse(s.directors).Replace("'", "''"), s.alt, DoubanHelper._get_filename(s.images.large), t.Category, t.Name.Replace("'", "''"),summary);
+                s.id, s.title.Replace("'","''"), s.original_title.Replace("'", "''"), s.rating.average, s.year==""?"0":s.year, s.subtype, parse(s.genres).Replace("'", "''"), parse(s.casts).Replace("'", "''"), parse(s.directors).Replace("'", "''"), s.alt, DoubanHelper._get_filename(s.images.large), t.Category, t.Name.Replace("'", "''"), summary.Replace("'", "''"));
             return DBHelper.GetScalar(sql);
         }
 
