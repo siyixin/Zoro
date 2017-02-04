@@ -33,7 +33,7 @@ namespace NewBridge.Zoro.Douban
 
             i = 0;
             Console.ReadLine();
-            while (i >= tasks.Count)
+            if(i == tasks.Count)
             {
                 aTimer.Stop();
                 aTimer.Dispose();

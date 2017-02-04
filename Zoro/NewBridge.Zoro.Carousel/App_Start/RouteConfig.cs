@@ -13,15 +13,15 @@ namespace NewBridge.Zoro.Carousel
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            //routes.MapRoute(
-            //    name: "Default",
-            //    url: "{controller}/{action}/{id}",
-            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            //);
-
             routes.MapRoute(
-                null, "", new { controller = "Home", action = "Movies", category = "top10" }
-                );
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
+
+            //routes.MapRoute(
+            //    null, "", new { controller = "Home", action = "Movies", category = "top10" }
+            //    );
 
             //routes.MapRoute(
             //    null, "{category}", new { controller = "Home", action = "Movies" }

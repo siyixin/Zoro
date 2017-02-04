@@ -51,7 +51,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>*@
-                <a class="brand" href="#">易泰电影资料库</a>
+                @*<a class="brand" href="#">易泰电影资料库</a>*@
+                @Html.ActionLink("易泰电影资料库","Movies",new { category="top10"},new { @class="brand"})
                 <div>
                     <ul class="nav navbar-static">
 @{Html.RenderAction("Menu", "Nav");}
