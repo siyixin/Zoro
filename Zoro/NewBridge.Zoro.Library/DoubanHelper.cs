@@ -126,7 +126,7 @@ namespace NewBridge.Zoro.Library
 
         public static IEnumerable<string> GetCategories()
         {
-            string sql = "SELECT category FROM movie GROUP BY category ORDER BY category DESC LIMIT 0,7";
+            string sql = "SELECT category FROM movie GROUP BY category ORDER BY category DESC LIMIT 0,9";
             DataTable dt = DBHelper.GetDataSet(sql);
             int num = dt.Rows.Count;
             string[] categories = new string[num];
