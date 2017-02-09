@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.IO;
 using System.Linq;
@@ -60,7 +61,8 @@ namespace NewBridge.Zoro.Library
             bool done = false;
             using (var w = new WebClient())
             {
-                string file = Directory.GetCurrentDirectory() + "\\images\\" + _get_filename(url);
+                //string file = Directory.GetCurrentDirectory() + "\\images\\" + _get_filename(url);
+                string file = ConfigurationManager.AppSettings["Path"] + _get_filename(url);
                 try
                 {
                     w.DownloadFileAsync(new Uri(url), file);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,8 @@ namespace NewBridge.Zoro.Library
 {
     public class FileHelper
     {
-        static string PATH = Directory.GetCurrentDirectory() + "\\images";
+        //static string PATH = Directory.GetCurrentDirectory() + "\\images";
+        static string PATH = ConfigurationManager.AppSettings["Path"];
         public static List<Task> GetTasks(string path)
         {
             List<Task> tasks = new List<Task>();

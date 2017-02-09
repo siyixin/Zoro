@@ -33,12 +33,14 @@ namespace NewBridge.Zoro.Douban
 
             i = 0;
             Console.ReadLine();
-            if(i == tasks.Count)
+            while(i == tasks.Count)
             {
                 aTimer.Stop();
                 aTimer.Dispose();
                 Console.WriteLine("豆瓣电影数据采集任务结束于：{0}", DateTime.Now.ToLongTimeString());
+                break;
             }
+            
         }
 
         private static void SetTimer()
@@ -56,11 +58,12 @@ namespace NewBridge.Zoro.Douban
             path = ConfigurationManager.AppSettings["Result"];
             //获得待处理的电影条目
             tasks = FileHelper.GetTasks(path);
+            Console.WriteLine("待处理的电影条目『{0}』条",tasks.Count);
         }
 
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
-            Console.WriteLine("{0}:{1}:{2}", i, tasks[i].Name, e.SignalTime.ToLongTimeString());
+            Console.WriteLine("{0}:{1}:{2}", i+1, tasks[i].Name, e.SignalTime.ToLongTimeString());
             //第一次调用豆瓣API
             Subject subject = DoubanHelper.GetChosen(tasks[i].Name);
             if (subject.id != null)
